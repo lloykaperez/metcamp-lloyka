@@ -1,0 +1,10 @@
+.error {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.bi-emoji-dizzy::before {
+    margin-top: 10%;
+    font-size: 80px;
+    margin-bottom: 2%;
+}
