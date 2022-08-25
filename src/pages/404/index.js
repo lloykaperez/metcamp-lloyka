@@ -6,10 +6,13 @@ function FourOFour() {
     return (
         <div className='error'>
             <i class="bi bi-emoji-dizzy text-light bi-lg" ></i>
-            <h4>No encontré lo que estabas buscando</h4>
+            <div className='mensajeError'>
+                <h4>No encontré lo que estabas buscando</h4>
+            </div>
             <Link to="/" className='link'>Regresar al Juego</Link>
         </div>
     )
+
 }
 
 export default FourOFour;

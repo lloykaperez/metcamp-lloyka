@@ -5,7 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #29235C;
+
+  /* background-color: #29235C; */
+
+  /* Fijar la imagen de fondo este vertical y horizontalmente y centrado */
+  background-position: center center;
+  /* Esta imagen no debe de repetirse */
+  background-repeat: no-repeat;
+  /* Con esta regla fijamos la imagen en la pantalla. */
+  background-attachment: fixed;
+  /* La imagen ocupa el 100% y se reescala */
+  background-size: cover;
+  
+  background-image: linear-gradient(to top, #29235c, #29235c, #29235c, #29235c, #29235c, #29235c, #29235c, #402762, #552a68, #692e6b, #7c326e);
+
+  /* background-image: linear-gradient(to top, #29235c, #3a2661, #4b2965, #5a2b68, #692e6b, #76316d, #83346e, #8f376f, #9c3b6f, #a9406f, #b5466d, #c04c6c); */
+  
 }
 
 code {

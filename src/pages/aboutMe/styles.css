@@ -2,10 +2,40 @@
     text-align: center;
 }
 
-h1 {
+.avatar {
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 200px;
+}
+
+h2 {
     color: #FFFFFF;
 }
 
+.desarrollo {
+    color: #F9F871;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.linkDesarrollo {
+    color: #EF7A60;
+}
+
+.contacto {
+    background-color: #FFB758;
+    margin: 5%;
+    padding: 3%;
+    color: #7C326E;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .link {
-    color: #FFED00;
+    color: #F9F871;
 } 
+
+.mail {
+    color: #29235C;
+}
