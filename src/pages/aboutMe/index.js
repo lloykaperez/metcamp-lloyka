@@ -11,7 +11,7 @@ function AboutMe() {
 
             <h2>Hola! Soy Lloyka Pérez</h2>
 
-            <p className='desarrollo'>Unx gestorx cultural en la ruta a ser unx desarrolladorx web. </p>
+            <p className='desarrollo'>En la ruta a ser unx desarrolladorx web. </p>
 
             <p className='desarrollo'>
                 Esta aplicación web está desarrollada en <a className='linkDesarrollo' href='https://reactjs.org' target={'blank'}> React</a> y fué realizada durante en MeTCaMP WeB 2022, dictado por <a className='linkDesarrollo' href='https://mujeresentecnologia.org/' target={'blank'}>MET [Mujeres en Tecnología]</a>.

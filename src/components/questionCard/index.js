@@ -2,6 +2,19 @@ import "./styles.css";
 
 function QuestionCard({ preguntaActual, selectedAnswers, setSelectedAnswers }) {
    
+    console.log(selectedAnswers)
+
+    function seleccionarRespuesta(identificador, valorOpcion){
+        const otrasRespuestas = selectedAnswers.filter((respuesta) => respuesta.id !== identificador)
+        
+        setSelectedAnswers([...otrasRespuestas,
+            {
+                id: identificador,
+                valorOpcion
+            }
+        ])
+    }
+
     return (
         <div className="card text-bg-warning w-auto">
             <div className="card-title">
@@ -11,9 +24,14 @@ function QuestionCard({ preguntaActual, selectedAnswers, setSelectedAnswers }) {
             <div className="card-text">
                 {
                     preguntaActual.answers.map((opcion) => (
-                        <div key={opcion.id} onChange>
-                            <input type="radio" id={`${opcion.id}`} name={opcion.id} value={opcion.answer}></input>
-                            <label htmlFor={`${opcion.id}`}>&nbsp;{opcion.answer}</label>
+                        <div 
+                        key={opcion.id} 
+                        onChange={() => seleccionarRespuesta(preguntaActual.id, opcion.is_correct)}>
+                            <input type="radio" 
+                                id={`${preguntaActual.id}`} 
+                                name={preguntaActual.id} 
+                                value={opcion.answer}></input>
+                            <label htmlFor={`${preguntaActual.id}`}>&nbsp;{opcion.answer}</label>
                         </div>
                     ))
                 }

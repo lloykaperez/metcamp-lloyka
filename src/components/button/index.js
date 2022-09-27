@@ -1,8 +1,8 @@
 import './styles.css'
 
-function Button({text, onClick}) {
+function Button({text, onClick, disabled}) {
     return (
-        <button onClick={onClick} className='btn btn-warning btn-lg'>
+        <button disabled={disabled} onClick={onClick} className='btn btn-warning btn-lg'>
             {text}
         </button>
     )

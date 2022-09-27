@@ -2,6 +2,7 @@ import Button from '../../components/button/index'
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 import './styles.css'
+import letras from '../../assets/letras.png'
 import { useState } from 'react'
 
 function Home() {
@@ -16,11 +17,13 @@ function Home() {
         <section className='container'>
 
             <div className='inicio'>
+
+                <img src={letras} className="letras" alt="letras"/>
                 <div className='elementoinicio'>
                     <Button onClick={() =>onClickButton('/game')} text='MetCamp Quiz'/>
                 </div>
                 <div className='elementoinicio'>
-                    <Link to="/aboutme">Desarrollado por</Link>
+                    <Link className='link' to="/aboutme">Desarrollado por</Link>
                 </div>
             </div>
            

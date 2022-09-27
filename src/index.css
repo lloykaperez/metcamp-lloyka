@@ -17,7 +17,9 @@ body {
   /* La imagen ocupa el 100% y se reescala */
   background-size: cover;
   
-  background-image: linear-gradient(to top, #29235c, #29235c, #29235c, #29235c, #29235c, #29235c, #29235c, #402762, #552a68, #692e6b, #7c326e);
+  background-image: url(/src/assets/fondo.png);
+
+  /* background-image: linear-gradient(to top, #29235c, #29235c, #29235c, #29235c, #29235c, #29235c, #29235c, #402762, #552a68, #692e6b, #7c326e);
 
   /* background-image: linear-gradient(to top, #29235c, #3a2661, #4b2965, #5a2b68, #692e6b, #76316d, #83346e, #8f376f, #9c3b6f, #a9406f, #b5466d, #c04c6c); */
   

@@ -1,7 +1,9 @@
+import Button from '../../components/button/index'
 import './styles.css'
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import QuestionCard from "../../components/questionCard"
+import letras from '../../assets/letras.png'
 
 const API_URL = "https://62bb6e36573ca8f83298fbef.mockapi.io/metcampweb22/v1/questions/harry-potter";
 
@@ -11,6 +13,10 @@ function Game() {
     const [ questions, setQuestions ] = useState([]);
     const [ selectedAnswers, setSelectedAnswers ] = useState([]);
     const [ result, setResult] = useState(0);
+
+    function calcularResultado() {
+        
+    }
 
     useEffect(() => {
         fetch(API_URL)
@@ -28,13 +34,19 @@ function Game() {
     return(
         <div className="container">
             <section className="">
+
+                <img src={letras} className="letras" alt="letras"/>
+                
+                
                 <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item"><Link to="/">Inicio</Link></li>
                         <li className="breadcrumb-item active" aria-current="page"><Link to="/game">Juego</Link></li>
                     </ol> 
                 </nav>
-                <h1>Esta es la page del Juego</h1>
+               
+               
+                
 
                 {
                     loading && (
@@ -49,14 +61,22 @@ function Game() {
                         <form>
                             {
                                 questions.map((pregunta) => {
-                                    return <QuestionCard key={pregunta.id} preguntaActual={pregunta}
-                                    selectedAnswers={selectedAnswers}
+                                    return <QuestionCard 
+                                        key={pregunta.id} 
+                                        preguntaActual={pregunta}
+                                        selectedAnswers={selectedAnswers}
+                                        setSelectedAnswers={setSelectedAnswers}
                                     />
                                 })
                             }
                         </form>
                     )
                 }
+                <div>
+                    <Button disabled={
+                            selectedAnswers?.length !== questions?.length
+                        } onClick={() => calcularResultado() } text='Validar'/>
+                </div>
             </section>
         </div>
     )
