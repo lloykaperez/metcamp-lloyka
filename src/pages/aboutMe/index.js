@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './styles.css'
-import avatar from './lloyka.jpg'
+import avatar from '../../assets/lloyka.jpg'
 
 
 function AboutMe() {
@@ -19,17 +19,17 @@ function AboutMe() {
 
             <div className='contacto'>
                 
-                <div class="h6 fw-bolder">Hablemos?</div>
-                <p class="text-light mb-4">
-                    Escríbeme a
+                <div className="h6 fw-bolder">Hablemos?</div>
+                <p className="text-light mb-4">
+                    Escríbeme
                     <br />
                     <a href="mailto:hola@lloyka.me" className='mail'>hola@lloyka.me</a>
                 </p>
-                <div class="h6 fw-bolder ">Sigámonos en</div>
-                <a class="fs-5 px-2 link-dark" href="https://www.linkedin.com/in/lloykaperez/" target="blank"><i class="bi bi-linkedin text-light"></i></a>
-                <a class="fs-5 px-2 link-dark" href="https://www.behance.net/lloykaperez" target="blank"><i class="bi bi-behance text-light"></i></a>
-                <a class="fs-5 px-2 link-dark" href="https://www.instagram.com/lloykaperez/" target="blank"><i class="bi bi-instagram text-light"></i></a>
-                <a class="fs-5 px-2 link-dark" href="https://github.com/lloykaperez" target="blank"><i class="bi bi-github text-light"></i></a>
+                <div className="h6 fw-bolder ">Sigámonos en</div>
+                <a className="fs-5 px-2 link-dark" href="https://www.linkedin.com/in/lloykaperez/" target="blank"><i className="bi bi-linkedin text-light"></i></a>
+                <a className="fs-5 px-2 link-dark" href="https://www.behance.net/lloykaperez" target="blank"><i className="bi bi-behance text-light"></i></a>
+                <a className="fs-5 px-2 link-dark" href="https://www.instagram.com/lloykaperez/" target="blank"><i className="bi bi-instagram text-light"></i></a>
+                <a className="fs-5 px-2 link-dark" href="https://github.com/lloykaperez" target="blank"><i className="bi bi-github text-light"></i></a>
                
             </div>
 

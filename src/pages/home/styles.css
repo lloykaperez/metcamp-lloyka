@@ -1,5 +1,14 @@
-.home {
-   
-    display: grid;
-    place-items: center;
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+}
+
+.inicio {
+    text-align: center;
+}
+
+.elementoinicio {
+  margin-top: 10%;
 }

@@ -5,7 +5,7 @@ function FourOFour() {
 
     return (
         <div className='error'>
-            <i class="bi bi-emoji-dizzy text-light bi-lg" ></i>
+            <i className="bi bi-emoji-dizzy text-light bi-lg" ></i>
             <div className='mensajeError'>
                 <h4>No encontré lo que estabas buscando</h4>
             </div>
