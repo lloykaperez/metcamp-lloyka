@@ -1,5 +1,23 @@
 .breadcrumb {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Link {
+  color: yellow;
+}
+
+.imagenResultado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+}
+
+.botonera {
+  display: flex;
   align-items: center;
   justify-content: center;
 }

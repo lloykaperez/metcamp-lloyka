@@ -20,7 +20,7 @@ function Home() {
 
                 <img src={letras} className="letras" alt="letras"/>
                 <div className='elementoinicio'>
-                    <Button onClick={() =>onClickButton('/game')} text='MetCamp Quiz'/>
+                    <Button onClick={() =>onClickButton('/game')} text='JUGAR'/>
                 </div>
                 <div className='elementoinicio'>
                     <Link className='link' to="/aboutme">Desarrollado por</Link>

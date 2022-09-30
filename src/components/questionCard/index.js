@@ -1,6 +1,6 @@
 import "./styles.css";
 
-function QuestionCard({ preguntaActual, selectedAnswers, setSelectedAnswers }) {
+function QuestionCard({ preguntaActual, selectedAnswers, setSelectedAnswers, mostrarResultado }) {
    
     console.log(selectedAnswers)
 
@@ -15,6 +15,21 @@ function QuestionCard({ preguntaActual, selectedAnswers, setSelectedAnswers }) {
         ])
     }
 
+    function monstrarColores(valor) {
+
+        let valorClase = "";
+        if (mostrarResultado) {
+            if (valor === true) {
+                valorClase = "text-success";
+            }
+            else {
+                valorClase = "text-danger"
+            }
+            
+        }
+        return valorClase;
+    }
+    
     return (
         <div className="card text-bg-warning w-auto">
             <div className="card-title">
@@ -31,7 +46,9 @@ function QuestionCard({ preguntaActual, selectedAnswers, setSelectedAnswers }) {
                                 id={`${preguntaActual.id}`} 
                                 name={preguntaActual.id} 
                                 value={opcion.answer}></input>
-                            <label htmlFor={`${preguntaActual.id}`}>&nbsp;{opcion.answer}</label>
+                            <label htmlFor={`${preguntaActual.id}`}
+                            className={monstrarColores(opcion.is_correct)}
+                            >&nbsp;{opcion.answer}</label>
                         </div>
                     ))
                 }

@@ -1,9 +1,11 @@
-import Button from '../../components/button/index'
-import './styles.css'
+import Button from '../../components/button/index';
+import './styles.css';
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import QuestionCard from "../../components/questionCard"
-import letras from '../../assets/letras.png'
+import QuestionCard from "../../components/questionCard";
+import letras from '../../assets/letras.png';
+import Result from '../../components/result';
+
 
 const API_URL = "https://62bb6e36573ca8f83298fbef.mockapi.io/metcampweb22/v1/questions/harry-potter";
 
@@ -13,9 +15,16 @@ function Game() {
     const [ questions, setQuestions ] = useState([]);
     const [ selectedAnswers, setSelectedAnswers ] = useState([]);
     const [ result, setResult] = useState(0);
+    const [ mostrarResultado, setMostrarResultado ] = useState(false);
+    
+    
 
     function calcularResultado() {
-        
+        console.log(selectedAnswers)
+        const respuestasCorrectas = selectedAnswers.filter((respuesta) => respuesta.valorOpcion === true)
+        console.log(respuestasCorrectas.length)
+        setResult(respuestasCorrectas.length)
+        setMostrarResultado(true)
     }
 
     useEffect(() => {
@@ -40,14 +49,11 @@ function Game() {
                 
                 <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
-                        <li className="breadcrumb-item"><Link to="/">Inicio</Link></li>
-                        <li className="breadcrumb-item active" aria-current="page"><Link to="/game">Juego</Link></li>
+                        <li className="breadcrumb-item"><Link className='Link' to="/">Inicio</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page"><Link className='Link' to="/game">Juego</Link></li>
                     </ol> 
                 </nav>
                
-               
-                
-
                 {
                     loading && (
                         <div className="d-flex align-items-center">
@@ -66,16 +72,34 @@ function Game() {
                                         preguntaActual={pregunta}
                                         selectedAnswers={selectedAnswers}
                                         setSelectedAnswers={setSelectedAnswers}
+                                        mostrarResultado={mostrarResultado}
                                     />
                                 })
                             }
                         </form>
                     )
                 }
-                <div>
+
+                <div className='imagenResultado'>
+                    {
+                        mostrarResultado &&
+                        <Result valorResultado={result} />
+
+                    }
+
+                </div>
+                <div className='botonera'>
+                    { mostrarResultado &&
+                        <p>{result}</p>
+                    }
+                    
                     <Button disabled={
-                            selectedAnswers?.length !== questions?.length
-                        } onClick={() => calcularResultado() } text='Validar'/>
+                        selectedAnswers?.length !== questions?.length || mostrarResultado}
+                        onClick={() => calcularResultado() } 
+                    text='Jugar'/>
+
+                    <Button onClick={() => window.location.reload()} text='Reiniciar'/>
+
                 </div>
             </section>
         </div>

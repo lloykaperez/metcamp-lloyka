@@ -26,10 +26,10 @@ function AboutMe() {
                     <a href="mailto:hola@lloyka.me" className='mail'>hola@lloyka.me</a>
                 </p>
                 <div className="h6 fw-bolder ">Sigámonos en</div>
-                <a className="fs-5 px-2 link-dark" href="https://www.linkedin.com/in/lloykaperez/" target="blank"><i className="bi bi-linkedin text-light"></i></a>
-                <a className="fs-5 px-2 link-dark" href="https://www.behance.net/lloykaperez" target="blank"><i className="bi bi-behance text-light"></i></a>
-                <a className="fs-5 px-2 link-dark" href="https://www.instagram.com/lloykaperez/" target="blank"><i className="bi bi-instagram text-light"></i></a>
-                <a className="fs-5 px-2 link-dark" href="https://github.com/lloykaperez" target="blank"><i className="bi bi-github text-light"></i></a>
+                <a className="fs-1 px-2 link-dark" href="https://www.linkedin.com/in/lloykaperez/" target="blank"><i className="bi bi-linkedin text-light"></i></a>
+                <a className="fs-1 px-2 link-dark" href="https://www.behance.net/lloykaperez" target="blank"><i className="bi bi-behance text-light"></i></a>
+                <a className="fs-1 px-2 link-dark" href="https://www.instagram.com/lloykaperez/" target="blank"><i className="bi bi-instagram text-light"></i></a>
+                <a className="fs-1 px-2 link-dark" href="https://github.com/lloykaperez" target="blank"><i className="bi bi-github text-light"></i></a>
                
             </div>
 
