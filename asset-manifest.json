@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/metcamp-lloyka/static/css/main.674e6af4.css",
+    "main.js": "/metcamp-lloyka/static/js/main.5d34435a.js",
+    "static/js/787.1edb02cd.chunk.js": "/metcamp-lloyka/static/js/787.1edb02cd.chunk.js",
+    "static/media/fondo.png": "/metcamp-lloyka/static/media/fondo.ccf5f70b7eeefdccafe5.png",
+    "static/media/letras.png": "/metcamp-lloyka/static/media/letras.5279a7aef7e09b5c9094.png",
+    "static/media/lloyka.jpg": "/metcamp-lloyka/static/media/lloyka.b78b6aba7ef4218cc1db.jpg",
+    "static/media/bootstrap-icons.woff?": "/metcamp-lloyka/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/bootstrap-icons.woff2?": "/metcamp-lloyka/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "static/media/mal.png": "/metcamp-lloyka/static/media/mal.2ecd040144ebca02894f.png",
+    "static/media/bien.png": "/metcamp-lloyka/static/media/bien.73e3c7b895c60d739a7f.png",
+    "index.html": "/metcamp-lloyka/index.html",
+    "main.674e6af4.css.map": "/metcamp-lloyka/static/css/main.674e6af4.css.map",
+    "main.5d34435a.js.map": "/metcamp-lloyka/static/js/main.5d34435a.js.map",
+    "787.1edb02cd.chunk.js.map": "/metcamp-lloyka/static/js/787.1edb02cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.674e6af4.css",
+    "static/js/main.5d34435a.js"
+  ]
+}
